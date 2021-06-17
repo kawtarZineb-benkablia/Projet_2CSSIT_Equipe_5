@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<body>
+    <h2>documents oploaded</h2>
+    {% for document in documents %}
+    <tr>
+
+
+        <td> <a href="{{ document.emplacement }}">{{ document.nom_doc }}</a></td><br>
+        <td>{{ document.taille}}</td><br>
+        <br>
+        <br>
+
+
+
+
+    </tr>
+    {% endfor %}
+</body>
+
+</html>
