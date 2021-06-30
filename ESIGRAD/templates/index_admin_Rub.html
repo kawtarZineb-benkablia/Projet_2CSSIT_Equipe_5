@@ -1,0 +1,342 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ESIGrad</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{% static 'todos\assets\css\responsive.css' %}">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'todos\assets\img\favicon.ico' %}">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\bootstrap.min.css' %}">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\font-awesome.min.css' %}">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'todos\assets\css\owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'todos\assets\css\owl.transitions.css' %}">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\animate.css' %}">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\normalize.css' %}">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\meanmenu.min.css' %}">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\main.css' %}">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\educate-custon-icon.css' %}">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\morrisjs\morris.css' %}">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\scrollbar\jquery.mCustomScrollbar.min.css' %}">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\metisMenu\metisMenu.min.css' %}">
+    <link rel="stylesheet" href="{% static 'todos\assets\css\metisMenu\metisMenu-vertical.css' %}">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\css\calendar\fullcalendar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'todos\assets\css\calendar\fullcalendar.print.min.css' %}">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="{% static 'todos\assets\style.css' %}">
+
+    <!-- modernizr JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\vendor\modernizr-2.8.3.min.js' %}"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="index.html"><img class="main-logo" src="{% static 'todos\assets\img\logo\ok.PNG' %}" style="margin-top: 10px; margin-right: 15px;" alt="" /></a>
+                <strong><a href="index.html"><img src="img/logo/logosn.png" alt="" /></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar" style="margin-top:40px">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+
+                        <li>
+                            <a href="{% url 'gestionUser' %}" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Gestion des comptes &nbsp;</span></a>
+
+                        </li>
+
+                        <li>
+                            <a href="{% url 'gestionrub' %}" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Gestion des rubriques &nbsp; </span></a>
+
+                        </li>
+                        <li>
+                            <a href="{% url 'gestionrep' %}" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Gestion des répértoires &nbsp; &nbsp; </span></a>
+
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="index.html">
+                            <img class="main-logo" src="{% static 'todos\assets\img\logo\logo.png' %}" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button style="position:relative; margin-left: 20px;" type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+													<i class="educate-icon educate-nav"></i>
+												</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+
+
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                        <img src="img/product/pro4.jpg" alt="" />
+                                                        <span class="admin-name">{{id_us}}</span>
+                                                        <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                    </a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+
+                                                        <li style="position: relative; margin-right:20%;"><a href="{% url 'autho' %}"><span  class="edu-icon edu-locked author-log-ic"></span>Déconnexion</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-wrapper" class="d-flex flex-column" style="position: relative; margin-left:3%">
+                <div id="content">
+                    {% include 'messages.html' %} {% block content %} {% endblock content %}
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area" style="position: relative; margin-left: 45px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="breadcome-heading">
+                                            <form role="search" class="sr-input-func">
+                                                <a><i class="fa fa-search"></i></a>
+                                                <input name="q" type="text" placeholder="Recherche..." class="search-int form-control">
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-status mg-b-15" style="position:relative; margin-left:35px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-status-wrap drp-lst" style="width:80%; margin-left:10%">
+                            <h4>Liste des rubriques</h4>
+                            <div class="add-product">
+                                <!--<a data-target="#exampleModal" href="add-department.html">Ajouter rubrique</a>-->
+                                <button type="button" class="btn btn-primary" style="position:relative; outline:none; left:85%; margin-bottom: 1%;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ajouter rubrique</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Veuillez donner le nom de la nouvelle rubrique</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="{% url 'créerub' %}" method="POST">
+                                                    {% csrf_token %}
+                                                    <div class="form-group">
+                                                        <label for="recipient-name" class="col-form-label">Le nom de la nouvelle rubrique:</label>
+                                                        <input type="text" class="form-control" id="nom_rub" name="nom_rub">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-primary">Ajouter</button>
+
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="asset-inner">
+                                <table>
+                                    <tr class="center" style="justify-content: center; align-items: center;">
+                                        <th>No</th>
+                                        <th>Nom des rubriques</th>
+                                        <th>Paramètres</th>
+                                    </tr>
+                                    {% for rub in rub_list %}
+                                    <tr class="center" style="justify-content: center; align-items: center;">
+                                        <td>{{forloop.counter}}</td>
+                                        <td>{{rub.nom_rub}}</td>
+                                        <td>
+
+                                            <form action="{% url 'popup' rub_id=rub.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <button id="renommer" type="submit" title="Renommer" class="pd-setting-ed" data-target="#example1Modal" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+
+                                            </form>
+
+                                            <form action="{% url 'popup_delete_rub' rub_id=rub.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <button type="submit" title="Supprimer" class="pd-setting-ed" data-toggle="modal" data-target="#example2Modal" data-whatever="@mdo"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </table>
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        setTimeout(function() {
+            if ($("#msg").length > 0) {
+                $("#msg").remove()
+            }
+        }, 3500)
+    </script>
+
+
+
+
+    <!-- jquery
+       
+		============================================ -->
+    <script src="{% static 'todos\assets\js\vendor\jquery-1.12.4.min.js' %}"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\bootstrap.min.js' %}"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\wow.min.js' %}"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\jquery-price-slider.js' %}"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\jquery.meanmenu.js' %}"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\owl.carousel.min.js' %}"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\jquery.sticky.js' %}"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\jquery.scrollUp.min.js' %}"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\counterup\jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\counterup\waypoints.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\counterup\counterup-active.js' %}"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\scrollbar\jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\scrollbar\mCustomScrollbar-active.js' %}"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\metisMenu\metisMenu.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\metisMenu\metisMenu-active.js' %}"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\morrisjs\raphael-min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\morrisjs\morris.js' %}"></script>
+    <script src="{% static 'todos\assets\js/morrisjs/morris-active.js' %}"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\sparkline\jquery.sparkline.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\sparkline\jquery.charts-sparkline.js' %}"></script>
+    <script src="{% static 'todos\assets\js\sparkline\sparkline-active.js' %}"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\calendar\moment.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\calendar\fullcalendar.min.js' %}"></script>
+    <script src="{% static 'todos\assets\js\calendar\fullcalendar-active.js' %}"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\plugins.js' %}"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\main.js' %}"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <script src="{% static 'todos\assets\js\tawk-chat.js' %}"></script>
+</body>
+
+</html>
