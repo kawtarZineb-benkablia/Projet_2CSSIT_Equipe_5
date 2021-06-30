@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'Projet2CS.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
     'default': {
-       # 'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
+       'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
         'NAME': 'dfckieeqpln30t', # le nom de notre base de donnees creee precedemment
         'USER': 'kggyihjvnhspkq', # attention : remplacez par votre nom d'utilisateur
         'PASSWORD': '20a13c634cbbf08d87c83a331680dba32de1e70addee1535c1f3e6d7391cffb9',
-        'HOST': 'https://ec2-54-228-9-90.eu-west-1.compute.amazonaws.com',
+        'HOST': 'ec2-54-228-9-90.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
