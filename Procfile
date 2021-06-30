@@ -1,1 +1,1 @@
-web: gunicorn ESIGRAD.wsgi --log-file -
+web: gunicorn Projet2CS.wsgi --log-file -
