@@ -8,7 +8,7 @@ from django.contrib import messages #import messages
 from datetime import datetime
 from time import strftime
 from django.core.mail import send_mail
-
+ 
  
 
 # Create your views here.
@@ -57,7 +57,7 @@ def upload_documents(request):
 
 def test(request:HttpRequest):
     return render(request,"dialog.html")
-
+ 
 def Liste_doc_simple(request:HttpRequest,rep_id):
     idRep=rep_id
     rep= Répertoire.objects.get(id=idRep) 
@@ -71,7 +71,7 @@ def Liste_doc_simple(request:HttpRequest,rep_id):
     
     return render(request,'index_user_Doc.html',{'documents':documents,'nom_rep':nom_rep,'rub_list':rub_list,'id_us':id_us})
 
-
+ 
 def Liste_doc_préviligié(request:HttpRequest,rep_id):
     global idRep 
     idRep=rep_id
@@ -105,10 +105,10 @@ def delete_Doc(request,pk):
     
         
      return redirect('/ESIGRAD/GestionDocPréviligié/')
-     
 def documents_list(request):
     documents = Document.objects.all()
     return render(request,'index_userP_Doc.html',{'documents':documents})
+  
 def Ajouter_document(request):  
     context = {}
     if request.method == 'POST':
@@ -317,6 +317,7 @@ def récupererId(request, rub_id):
 def affich_authentif(request):
     return render(request,"authentification.html")
     ####################################
+ 
 def authentification(request):
     global id_us 
     if request.method == 'POST':
